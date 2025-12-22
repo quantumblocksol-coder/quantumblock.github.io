@@ -117,6 +117,9 @@ h1, h2, h3 {
   border: 1px solid #00e5ff;
   color: #00e5ff;
 }
+buy {
+  border: 1px solid #00e5ff;
+  color: #00e5ff;
 
 .stats {
   display: grid;
