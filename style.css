@@ -4,6 +4,63 @@
   box-sizing: border-box;
 }
 
+/* Layout */
+.title-logo.side-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.title-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.qb-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: #e6f1ff;
+  text-align: center;
+}
+
+.logo-circle {
+  width: 160px;   /* size of circle */
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(120, 180, 255, 0.6);
+  box-shadow: 0 0 25px rgba(80, 150, 255, 0.6);
+}
+
+.logo-circle video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+.logo-circle {
+  width: 160px;   /* size of circle */
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(120, 180, 255, 0.6);
+  box-shadow: 0 0 25px rgba(80, 150, 255, 0.6);
+}
+
+/* Glow + rotation animation */
+.rotate-glow {
+  animation: spin 12s linear infinite, pulse 3s ease-in-out infinite;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background: radial-gradient(circle at top, #0b0f1a, #05070c);
@@ -98,6 +155,10 @@ section {
 }
 
 .btn.secondary {
+  border: 1px solid #6c7bff;
+  color: #6c7bff;
+}
+.btn.buy {
   border: 1px solid #6c7bff;
   color: #6c7bff;
 }
